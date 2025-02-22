@@ -1,0 +1,16 @@
+{
+   "compilerOptions": {
+     "target": "ES2020",  // This is fine for modern JS features.
+     "module": "CommonJS",  // Ensures that your code is compatible with Node.js.
+     "rootDir": "./src",  // Ensures that TypeScript knows where your source files are.
+     "outDir": "./dist",  // Directory for the compiled JavaScript files.
+     "strict": true,  // Enforces stricter type checking (recommended).
+     "esModuleInterop": true,  // Allows using default imports and named imports in Node.js.
+     "skipLibCheck": true,  // Skips checking of declaration files (speeds up compilation).
+     "experimentalDecorators": true,  // Enable support for decorators in TypeScript.
+     "emitDecoratorMetadata": true  // Required for `sequelize-typescript` to function properly.
+   },
+   "include": ["src"],  // Specifies the source directory.
+   "exclude": ["node_modules"]  // Excludes the node_modules directory.
+ }
+ 
